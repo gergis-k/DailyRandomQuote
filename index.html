@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icon -->
+    <link rel="icon" href="assets/images/icons/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="assets/fontawesome/dist/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/dist/css/style.css">
+
+    <!-- Title -->
+    <title>Quotes App</title>
+</head>
+
+<body>
+
+    <!-- Main -->
+    <section id="main-section" class="main-section">
+        <div class="container">
+            <div class="row gy-5">
+
+
+                <div class="col-md-12">
+                    <div class="main-content text-center">
+                        <h1>Quote of the Day</h1>
+                        <p>
+                            Press the button below to recieve a random quote!
+                        </p>
+                        <button class="btn btn-primary btn-lg" onclick="generateQuote()">New Quote</button>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header h3 clearfix">
+                            <h3 class="float-start">Quote</h3>
+                            <button class="float-end btn btn-success" id="copyBtn"
+                                onclick="copyToClipboard()">Copy</button>
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0 text-center">
+                                <p class="lead mb-4" id="quote">
+                                </p>
+                                <footer class="blockquote-footer" id="author">
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap-Bundle JS -->
+    <script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JQuery JS -->
+    <script src="assets/jquery/dist/js/jquery-3.6.1.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/dist/js/script.js"></script>
+
+</body>
+
+</html>
